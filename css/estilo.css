@@ -11,4 +11,12 @@
         flex-wrap: wrap;
         align-items: center;
         background-color:rgb(96, 96, 236);
+
+    }
+
+    .cabecalho img{
+        width: 30%;
+        max-width: 30%;
+        display: block;
+        
     }
