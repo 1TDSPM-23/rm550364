@@ -5,12 +5,16 @@
 
 }
 
+body{
+    font-size: 10px;
+}
+
     .cabecalho{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        background: color #d9d9d9;;
+        background: color #000000;
 
     }
 
@@ -39,6 +43,37 @@
     }
 
     .cabecalho a:hover{
-        background-color: black;
-        color:#fff;
+        background-color: #fff;
+        color:#000000;
     }
+
+    .tit-sec{
+        text-align: center;
+        font-size: 5rem;
+        margin: 5% 0;
+    }
+
+    /* vw = view width
+vh = view height  */
+
+    .conteudo{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: o auto;
+    }
+
+    .conteudo img{
+        max-width: 100%;
+        display: block;
+    }
+    /* 
+Utilizando as propriedades especificas
+GROW/BASIS/SHRINK */
+.conteudo > div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    flex: 1 1 300px;
+    
+}
