@@ -56,11 +56,11 @@
 // var nome1 = "Beatriz";
 // let nome2 = "Matheus";
 
-var nome = "Beatriz";
-if(nome == ""){
-    var nome = "Robson";
-}
-console.log(nome);
+// var nome = "Beatriz";
+// if(nome == ""){
+//     var nome = "Robson";
+// }
+// console.log(nome);
 
 // ou coloca a variavel diferente ou coloca let, pq let respeita "hoisting" e var n.
 //"hoisting" = elevação
@@ -74,37 +74,42 @@ console.log(nome);
 //console.log (nome) = "x"
 
 //ARRAY e seu métodos
-let frutas = ["banana","maçã","morango","carambola","acerola","laranja"];
-//Imprimindo um array
-console.log(frutas);
-console.table(frutas);
-console.log(frutas[4])
+// let frutas = ["banana","maçã","morango","carambola","acerola","laranja"];
+// //Imprimindo um array
+// console.log(frutas);
+// console.table(frutas);
+// console.log(frutas[4])
 
-//Adicionar um item ao final do array com o método pus();
-frutas.push("melão");
-console.log(frutas);
+// //Adicionar um item ao final do array com o método pus();
+// frutas.push("melão");
+// console.log(frutas);
 
-//Adicionar um item ao começo do array com o método pus();
-frutas.unshift("cajú");
-console.log(frutas);
+// //Adicionar um item ao começo do array com o método pus();
+// frutas.unshift("cajú");
+// console.log(frutas);
 
-//Remover um item do final do array com o método pop();
-frutas.pop();
-console.log(frutas);
+// //Remover um item do final do array com o método pop();
+// frutas.pop();
+// console.log(frutas);
 
-//Remover um item do início do array com o método shift();
-frutas.shift();
-console.log(frutas);
+// //Remover um item do início do array com o método shift();
+// frutas.shift();
+// console.log(frutas);
 
-//Para localizar um itém dentro do array, utilizamos o método indexOf()
-// let indice = frutas.indexOf("morango");
-// console.log(frutas[indice]);
+// //Para localizar um itém dentro do array, utilizamos o método indexOf()
+// // let indice = frutas.indexOf("morango");
+// // console.log(frutas[indice]);
 
-//Para localizar um item dentro do array e apagar ele apagar ele utilizamos o metodo splice (indice do item, quantidade de vezes que o indica sera removido).
-//obs: utiliza o metodo indexOf(itemNome) para obter o indice do item;
-let indice = frutas.indexOf("carambola");
-console.log("FRUTA Q ESTAVA NO INDICE ANTES DA REMOÇÃO : " + frutas[indice]);
-frutas.splice(indice,1);
-console.log("FRUTA Q FICOU NO INDICE PÓS REMOÇÃO : " + frutas[indice]);
+// //Para localizar um item dentro do array e apagar ele apagar ele utilizamos o metodo splice (indice do item, quantidade de vezes que o indica sera removido).
+// //obs: utiliza o metodo indexOf(itemNome) para obter o indice do item;
+// let indice = frutas.indexOf("carambola");
+// console.log("FRUTA Q ESTAVA NO INDICE ANTES DA REMOÇÃO : " + frutas[indice]);
+// frutas.splice(indice,1);
+// console.log("FRUTA Q FICOU NO INDICE PÓS REMOÇÃO : " + frutas[indice]);
 
-frutas.forEach( () => {} );
+// frutas.forEach( (fruta) => {
+//     console.log("Olha ele: " + fruta);
+// } );
+
+const inputUser = document.getElementById("idNm")
+console.log(inputUser.value);
