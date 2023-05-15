@@ -19,6 +19,20 @@ function insereNumeroNoVisor(botao,visor) {
 }
 
 const resultadoDasOperacoes = (visor) =>{
-    //Utilizando a função eva(expressão)
-    visor.value = eval(visor.value);
+    
+    try {
+        //Utilizando a função eva(expressão)
+        visor.value = eval(visor.value);      
+    } catch (error) {
+    
+        //Verificando o penúltimo caractere do visor utilizando o atributo length
+        if(visor.value[visor.value.length] == "+" || visor.value[visor.value.length] == "-" || visor.value[visor.value.length] == "*" || visor.value[visor.value.length] == "/"){
+            visor.value = visor.value.slice(visor.value.length-1);
+        }else{
+            visor.value = visor.value.slice(1);
+        }
+
+    }
+
+
 }
